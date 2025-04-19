@@ -8,7 +8,15 @@ export default function Footer() {
       <div className="container px-4 py-12 mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <h3 className="text-xl font-bold">Bresan Projects LLC</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/bresan-logo-horizontal.png"
+                alt="Bresan Projects Logo"
+                width={220}
+                height={55}
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               Where Vision Meets Value. Specializing in residential renovations and investor-funded home improvement
               projects.

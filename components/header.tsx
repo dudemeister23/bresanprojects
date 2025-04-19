@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -43,7 +44,15 @@ export default function Header() {
     >
       <div className="container flex h-16 items-center justify-between py-4">
         <Link href="/" className="flex items-center">
-          <span className="text-xl font-bold text-primary">Bresan Projects</span>
+          <Image
+            src="/images/bresan-logo-horizontal.png"
+            alt="Bresan Projects Logo"
+            width={200}
+            height={50}
+            className="h-10 w-auto"
+            priority
+          />
+          <span className="sr-only">Bresan Projects</span>
         </Link>
 
         <div className="hidden md:flex">
@@ -109,7 +118,16 @@ export default function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
-            <nav className="flex flex-col gap-4 mt-8">
+            <div className="mb-8 mt-4">
+              <Image
+                src="/images/bresan-logo-horizontal.png"
+                alt="Bresan Projects Logo"
+                width={180}
+                height={45}
+                className="h-8 w-auto"
+              />
+            </div>
+            <nav className="flex flex-col gap-4">
               <Link href="/" className="text-lg font-medium hover:text-primary">
                 Home
               </Link>
