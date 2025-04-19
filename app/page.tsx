@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Faq } from "@/components/faq"
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.jpg"
-            alt="Modern luxury interior with ocean view"
+            src="/images/modern-dining.jpeg"
+            alt="Modern luxury interior with elegant dining area"
             fill
             className="object-cover"
             priority
@@ -21,16 +22,16 @@ export default function Home() {
 
         <div className="container relative z-10 px-4 mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-              Where Vision <span className="text-sky-300">Meets Value</span>
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+              Project Management for <span className="text-sky-300">High-End Renovations</span> & Real Estate Ventures
+              in Palm Beach County
             </h1>
             <p className="mt-6 text-xl text-white/90 max-w-2xl">
-              Bresan Projects delivers exceptional real estate project management for residential renovations and
-              investor-funded home improvements in Palm Beach and beyond.
+              From house flips to full-home remodels, we help vision become reality—on time and on budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-700">
-                <Link href="/contact">Get Started</Link>
+                <Link href="/contact">Book a Free Consultation</Link>
               </Button>
               <Button
                 asChild
@@ -67,8 +68,8 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/about.jpg"
-                alt="Beautiful Florida coastal beach with palm trees"
+                src="/images/color-palette.jpeg"
+                alt="Design planning with color palette selection"
                 fill
                 className="object-cover"
               />
@@ -78,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-sky-50" id="services">
         <div className="container px-4 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -90,7 +91,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {/* Service Card 1 */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
               <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
@@ -105,14 +106,14 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Project Oversight</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Whole-Home Remodels</h3>
               <p className="text-gray-600 mb-6">
-                Comprehensive management of your renovation projects from planning to completion, ensuring quality and
-                timeliness.
+                Comprehensive renovation management from concept to closeout. Ideal for homeowners updating layout,
+                design, or functionality.
               </p>
               <ul className="space-y-2">
                 {["Budget management", "Contractor coordination", "Timeline tracking"].map((item, i) => (
@@ -138,17 +139,16 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Renovation Consulting</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Investor Flips</h3>
               <p className="text-gray-600 mb-6">
-                Expert advice for your home improvement projects, helping you make informed decisions that maximize
-                value.
+                Full project execution for investor-owned properties, with tight timelines and return-focused delivery.
               </p>
               <ul className="space-y-2">
-                {["Design guidance", "Material selection", "Value engineering"].map((item, i) => (
+                {["ROI analysis", "Market research", "Exit strategy planning"].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
@@ -171,16 +171,48 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Investor Support</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Kitchen & Bath Upgrades</h3>
               <p className="text-gray-600 mb-6">
-                Specialized services for real estate investors looking to maximize returns on renovation projects.
+                Coordination with licensed subs and designers to modernize high-ROI spaces with minimal disruption.
               </p>
               <ul className="space-y-2">
-                {["ROI analysis", "Market research", "Exit strategy planning"].map((item, i) => (
+                {["Design guidance", "Material selection", "Value engineering"].map((item, i) => (
+                  <li key={i} className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                    <span className="text-sm text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Service Card 4 */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
+              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-sky-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Pre-Sale Improvements</h3>
+              <p className="text-gray-600 mb-6">
+                Strategic updates to maximize listing appeal and sales value—especially for local agents and developers.
+              </p>
+              <ul className="space-y-2">
+                {["Targeted upgrades", "Staging coordination", "Market positioning"].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
@@ -198,6 +230,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white" id="faq">
+        <div className="container px-4 mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Frequently Asked Questions</h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Common questions about our services and approach to project management.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <Faq />
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-sky-600">
         <div className="container px-4 mx-auto text-center">
@@ -209,7 +257,7 @@ export default function Home() {
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Contact Us Today</Link>
+              <Link href="/contact">Book a Free Consultation</Link>
             </Button>
           </div>
         </div>

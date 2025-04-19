@@ -1,7 +1,14 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Services - Bresan Projects Palm Beach Renovation Management",
+  description:
+    "Explore our renovation project management services including whole-home remodels, investor flips, kitchen & bath upgrades, and pre-sale improvements.",
+}
 
 export default function ServicesPage() {
   return (
@@ -25,18 +32,13 @@ export default function ServicesPage() {
             {/* Service 1 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=800&width=1200&text=Project+Oversight"
-                  alt="Project Oversight"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/modern-dining.jpeg" alt="Whole-Home Remodels" fill className="object-cover" />
               </div>
               <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Project Oversight</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Whole-Home Remodels</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Comprehensive management of your renovation projects from planning to completion, ensuring quality and
-                  timeliness.
+                  Comprehensive renovation management from concept to closeout. Ideal for homeowners updating layout,
+                  design, or functionality.
                 </p>
                 <ul className="mt-8 space-y-4">
                   {[
@@ -59,18 +61,41 @@ export default function ServicesPage() {
             {/* Service 2 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="order-1 md:order-2 relative h-[400px] rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=800&width=1200&text=Renovation+Consulting"
-                  alt="Renovation Consulting"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/images/modern-kitchen.jpeg" alt="Investor Flips" fill className="object-cover" />
               </div>
               <div className="order-2 md:order-1">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Renovation Consulting</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Investor Flips</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Expert advice for your home improvement projects, helping you make informed decisions that maximize
-                  value.
+                  Full project execution for investor-owned properties, with tight timelines and return-focused
+                  delivery.
+                </p>
+                <ul className="mt-8 space-y-4">
+                  {[
+                    "ROI analysis and projections",
+                    "Market research and property valuation",
+                    "Exit strategy planning and execution",
+                    "Renovation scope optimization for target markets",
+                    "Contractor network access and management",
+                    "Investment portfolio advisory services",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
+                      <span className="text-gray-600">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Service 3 */}
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
+              <div className="relative h-[400px] rounded-lg overflow-hidden">
+                <Image src="/images/luxury-bathroom.jpeg" alt="Kitchen & Bath Upgrades" fill className="object-cover" />
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Kitchen & Bath Upgrades</h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Coordination with licensed subs and designers to modernize high-ROI spaces with minimal disruption.
                 </p>
                 <ul className="mt-8 space-y-4">
                   {[
@@ -90,29 +115,25 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Service 3 */}
+            {/* Service 4 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
-              <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=800&width=1200&text=Investor+Support"
-                  alt="Investor Support"
-                  fill
-                  className="object-cover"
-                />
+              <div className="order-1 md:order-2 relative h-[400px] rounded-lg overflow-hidden">
+                <Image src="/images/color-palette.jpeg" alt="Pre-Sale Improvements" fill className="object-cover" />
               </div>
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Investor Support</h2>
+              <div className="order-2 md:order-1">
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Pre-Sale Improvements</h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Specialized services for real estate investors looking to maximize returns on renovation projects.
+                  Strategic updates to maximize listing appeal and sales value—especially for local agents and
+                  developers.
                 </p>
                 <ul className="mt-8 space-y-4">
                   {[
-                    "ROI analysis and projections",
-                    "Market research and property valuation",
-                    "Exit strategy planning and execution",
-                    "Renovation scope optimization for target markets",
-                    "Contractor network access and management",
-                    "Investment portfolio advisory services",
+                    "Targeted upgrades for maximum ROI",
+                    "Staging coordination and management",
+                    "Market positioning and analysis",
+                    "Curb appeal enhancements",
+                    "Quick-turn renovations on tight timelines",
+                    "Realtor and agent partnerships",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
@@ -262,7 +283,7 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                   <Button asChild className={plan.featured ? "w-full bg-sky-600 hover:bg-sky-700" : "w-full"}>
-                    <Link href="/contact">Contact for Quote</Link>
+                    <Link href="/contact">Book a Free Consultation</Link>
                   </Button>
                 </div>
               </div>
@@ -282,7 +303,7 @@ export default function ServicesPage() {
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Schedule Consultation</Link>
+              <Link href="/contact">Book a Free Consultation</Link>
             </Button>
           </div>
         </div>

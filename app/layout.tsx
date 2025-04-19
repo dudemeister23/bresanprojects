@@ -13,9 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Bresan Projects LLC | Where Vision Meets Value",
-  description:
-    "Florida-based real estate project management firm specializing in residential renovations and investor-funded home improvement projects.",
+  title: "Bresan Projects – Renovation Management in Palm Beach",
+  description: "Bresan Projects LLC specializes in managing house flips and high-end renovations in Palm Beach County.",
     generator: 'v0.dev'
 }
 

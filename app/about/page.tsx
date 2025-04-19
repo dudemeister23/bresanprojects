@@ -1,6 +1,13 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "About Bresan Projects - Palm Beach Renovation Management",
+  description:
+    "Learn about Bresan Projects LLC, a Palm Beach-based real estate project management firm specializing in high-end renovations and investor projects.",
+}
 
 export default function AboutPage() {
   return (
@@ -9,7 +16,9 @@ export default function AboutPage() {
       <section className="relative py-20 bg-sky-50">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">About Bresan Projects</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Palm Beach Renovation Project Management
+            </h1>
             <p className="mt-6 text-xl text-gray-600">
               A Palm Beach-based real estate project management firm with a passion for transforming properties and
               exceeding expectations.
@@ -24,8 +33,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/about.jpg"
-                alt="Beautiful Florida coastal beach with palm trees"
+                src="/images/modern-kitchen.jpeg"
+                alt="Modern kitchen with wooden countertops"
                 fill
                 className="object-cover"
               />
@@ -151,7 +160,7 @@ export default function AboutPage() {
           <div className="max-w-md mx-auto">
             <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-80 w-full">
-                <Image src="/images/hero.jpg" alt="Fabian Bresan" fill className="object-cover" />
+                <Image src="/images/luxury-bathroom.jpeg" alt="Fabian Bresan" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">Fabian Bresan</h3>
@@ -203,7 +212,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/contact">Book a Free Consultation</Link>
             </Button>
           </div>
         </div>

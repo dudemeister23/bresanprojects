@@ -64,6 +64,13 @@ export default function ContactPage() {
       {/* Contact Form & Info */}
       <section className="py-20 bg-white">
         <div className="container px-4 mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Ready to discuss your project?</h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Let's talk about timeline, budget, and goals—no strings attached.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {/* Contact Form */}
             <Card>
@@ -139,7 +146,7 @@ export default function ContactPage() {
                   </div>
 
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Sending..." : "Book a Free Consultation"}
                   </Button>
                 </form>
               </CardContent>
