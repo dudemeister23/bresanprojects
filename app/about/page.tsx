@@ -33,8 +33,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/modern-kitchen.jpeg"
-                alt="Modern kitchen with wooden countertops"
+                src="/images/about.jpg"
+                alt="Beautiful Florida coastal beach with palm trees"
                 fill
                 className="object-cover"
               />
@@ -43,18 +43,17 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Story</h2>
               <div className="mt-6 space-y-6 text-lg text-gray-600">
                 <p>
-                  Bresan Projects was founded by Fabian Bresan with a simple mission: to bring professional project
-                  management expertise to residential renovations and investor-funded home improvement projects.
+                  Bresan Projects was founded by Fabian Bresan with a clear purpose: to bring structure, transparency,
+                  and professional oversight to residential renovations and investor-led home improvement projects.
                 </p>
                 <p>
-                  With deep roots in Palm Beach and years of experience in real estate development, Fabian identified a
-                  gap in the market for a service that could bridge the communication between homeowners, contractors,
-                  and investors while ensuring projects were completed on time, within budget, and to the highest
-                  standards.
+                  Drawing on his background in medicine, business, and entrepreneurship, Fabian saw an opportunity to
+                  serve a growing need in Palm Beach County—clients who wanted a single point of accountability to
+                  navigate complex remodels, coordinate subcontractors, and keep projects on track.
                 </p>
                 <p>
-                  Since our founding, we've successfully managed dozens of projects across Palm Beach County, building a
-                  reputation for reliability, transparency, and exceptional results.
+                  Bresan Projects is quickly earning the trust of homeowners and investors alike through a hands-on,
+                  detail-oriented approach and a commitment to delivering results without surprises.
                 </p>
               </div>
             </div>
@@ -160,15 +159,16 @@ export default function AboutPage() {
           <div className="max-w-md mx-auto">
             <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-80 w-full">
-                <Image src="/images/luxury-bathroom.jpeg" alt="Fabian Bresan" fill className="object-cover" />
+                <Image src="/images/hero.jpg" alt="Fabian Bresan" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">Fabian Bresan</h3>
                 <p className="text-sky-600 mb-4">Founder & Principal</p>
                 <p className="text-gray-600 mb-6">
-                  With over 15 years of experience in real estate development and project management, Fabian brings a
-                  wealth of knowledge and expertise to every project. His attention to detail and commitment to client
-                  satisfaction have made Bresan Projects a trusted name in Palm Beach County.
+                  Fabian combines a background in medicine and business with hands-on experience in managing home
+                  renovations and investor projects. As the founder of Bresan Projects, he brings a sharp eye for
+                  detail, operational discipline, and a strong commitment to client outcomes—making the company a rising
+                  presence in Palm Beach County’s high-end renovation market.
                 </p>
                 <div className="flex space-x-4">
                   <Link href="#" className="text-gray-400 hover:text-sky-600">

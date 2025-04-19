@@ -11,8 +11,8 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/modern-dining.jpeg"
-            alt="Modern luxury interior with elegant dining area"
+            src="/images/hero.jpg"
+            alt="Modern luxury interior with ocean view"
             fill
             className="object-cover"
             priority
@@ -68,8 +68,8 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/color-palette.jpeg"
-                alt="Design planning with color palette selection"
+                src="/images/about.jpg"
+                alt="Beautiful Florida coastal beach with palm trees"
                 fill
                 className="object-cover"
               />

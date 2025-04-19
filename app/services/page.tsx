@@ -32,7 +32,7 @@ export default function ServicesPage() {
             {/* Service 1 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image src="/images/modern-dining.jpeg" alt="Whole-Home Remodels" fill className="object-cover" />
+                <Image src="/images/hero.jpg" alt="Whole-Home Remodels" fill className="object-cover" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Whole-Home Remodels</h2>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
             {/* Service 2 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="order-1 md:order-2 relative h-[400px] rounded-lg overflow-hidden">
-                <Image src="/images/modern-kitchen.jpeg" alt="Investor Flips" fill className="object-cover" />
+                <Image src="/images/about.jpg" alt="Investor Flips" fill className="object-cover" />
               </div>
               <div className="order-2 md:order-1">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Investor Flips</h2>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
             {/* Service 3 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image src="/images/luxury-bathroom.jpeg" alt="Kitchen & Bath Upgrades" fill className="object-cover" />
+                <Image src="/images/hero.jpg" alt="Kitchen & Bath Upgrades" fill className="object-cover" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Kitchen & Bath Upgrades</h2>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
             {/* Service 4 */}
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 items-center">
               <div className="order-1 md:order-2 relative h-[400px] rounded-lg overflow-hidden">
-                <Image src="/images/color-palette.jpeg" alt="Pre-Sale Improvements" fill className="object-cover" />
+                <Image src="/images/about.jpg" alt="Pre-Sale Improvements" fill className="object-cover" />
               </div>
               <div className="order-2 md:order-1">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Pre-Sale Improvements</h2>
