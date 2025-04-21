@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -13,7 +12,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-sky-50">
+      <section className="relative py-20 bg-navy/5">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -62,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-navy/5">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Approach</h2>
@@ -81,7 +80,7 @@ export default function AboutPage() {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-sky-600"
+                    className="h-6 w-6 text-navy"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -101,7 +100,7 @@ export default function AboutPage() {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-sky-600"
+                    className="h-6 w-6 text-navy"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -121,7 +120,7 @@ export default function AboutPage() {
                 icon: (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-sky-600"
+                    className="h-6 w-6 text-navy"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -137,7 +136,7 @@ export default function AboutPage() {
               },
             ].map((item, i) => (
               <div key={i} className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+                <div className="w-12 h-12 bg-navy/10 rounded-full flex items-center justify-center mb-6">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
@@ -163,20 +162,20 @@ export default function AboutPage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">Fabian Bresan</h3>
-                <p className="text-sky-600 mb-4">Founder & Principal</p>
+                <p className="text-navy mb-4">Founder & Principal</p>
                 <p className="text-gray-600 mb-6">
                   Fabian combines a background in medicine and business with hands-on experience in managing home
                   renovations and investor projects. As the founder of Bresan Projects, he brings a sharp eye for
                   detail, operational discipline, and a strong commitment to client outcomes—making the company a rising
-                  presence in Palm Beach County’s high-end renovation market.
+                  presence in Palm Beach County's high-end renovation market.
                 </p>
                 <div className="flex space-x-4">
-                  <Link href="#" className="text-gray-400 hover:text-sky-600">
+                  <Link href="#" className="text-gray-400 hover:text-navy">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                     </svg>
                   </Link>
-                  <Link href="#" className="text-gray-400 hover:text-sky-600">
+                  <Link href="#" className="text-gray-400 hover:text-navy">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                         fillRule="evenodd"
@@ -185,11 +184,11 @@ export default function AboutPage() {
                       />
                     </svg>
                   </Link>
-                  <Link href="#" className="text-gray-400 hover:text-sky-600">
+                  <Link href="#" className="text-gray-400 hover:text-navy">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                         fillRule="evenodd"
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 016.729-5.975zM3.453 12.01v-.044c.053-.036 4.282.413 8.272-1.14.205.396.41.801.615 1.212-1.853.562-3.567 1.401-5.14 2.436-1.52 1.023-2.768 2.32-3.747 3.835 0-2.07.496-4.003 1.38-5.716l-.38-.583zm4.567 7.224c.961-1.605 2.194-2.945 3.665-3.982 1.469-1.037 3.168-1.895 5.037-2.498.38.819.71 1.658.961 2.518.253.858.437 1.741.548 2.65-1.674 1.904-4.126 3.11-6.844 3.11-1.21 0-2.37-.241-3.43-.674l.063-.124zm10.157-7.547c.046-.01.091-.024.137-.035-.018 1.11-.321 2.361-.893 3.675-1.009-1.925-1.814-4.018-2.3-6.195.695-.262 1.337-.39 1.886-.39.704 0 1.19.103 1.17.103v2.842z"
                         clipRule="evenodd"
                       />
                     </svg>
@@ -197,23 +196,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-sky-600">
-        <div className="container px-4 mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl max-w-2xl mx-auto">
-            Ready to Work With Us?
-          </h2>
-          <p className="mt-4 text-xl text-white/90 max-w-2xl mx-auto">
-            Contact Bresan Projects today to discuss your real estate project management needs.
-          </p>
-          <div className="mt-10">
-            <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Book a Free Consultation</Link>
-            </Button>
           </div>
         </div>
       </section>

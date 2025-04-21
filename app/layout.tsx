@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Bresan Projects – Renovation Management in Palm Beach",
   description: "Bresan Projects LLC specializes in managing house flips and high-end renovations in Palm Beach County.",
   icons: {
-    icon: "/images/bresan-logo-horizontal.png",
+    icon: "/images/bresan-logo-horizontal-new.png",
   },
     generator: 'v0.dev'
 }

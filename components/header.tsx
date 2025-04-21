@@ -12,7 +12,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
@@ -39,29 +38,33 @@ export default function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-200",
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent",
+        isScrolled ? "bg-[#02346A]/95 backdrop-blur-md shadow-md" : "bg-[#02346A]",
       )}
     >
-      <div className="container flex h-16 items-center justify-between py-4">
+      <div className="container flex h-20 items-center justify-between py-4">
         <Link href="/" className="flex items-center">
-          <Image
-            src="/images/bresan-logo-horizontal.png"
-            alt="Bresan Projects Logo"
-            width={200}
-            height={50}
-            className="h-10 w-auto"
-            priority
-          />
+          <div className="relative h-12 w-64">
+            <Image
+              src="/images/bresan-logo-horizontal-new.png"
+              alt="Bresan Projects Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <span className="sr-only">Bresan Projects</span>
         </Link>
 
         <div className="hidden md:flex">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="gap-1">
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), pathname === "/" && "text-primary font-medium")}
+                    className={cn(
+                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+                      pathname === "/" ? "text-white font-semibold" : "text-white/80",
+                    )}
                   >
                     Home
                   </NavigationMenuLink>
@@ -70,14 +73,22 @@ export default function Header() {
               <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), pathname === "/about" && "text-primary font-medium")}
+                    className={cn(
+                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+                      pathname === "/about" ? "text-white font-semibold" : "text-white/80",
+                    )}
                   >
                     About
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={cn(pathname === "/services" && "text-primary font-medium")}>
+                <NavigationMenuTrigger
+                  className={cn(
+                    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+                    pathname === "/services" ? "text-white font-semibold" : "text-white/80",
+                  )}
+                >
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -100,7 +111,10 @@ export default function Header() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink
-                    className={cn(navigationMenuTriggerStyle(), pathname === "/contact" && "text-primary font-medium")}
+                    className={cn(
+                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 focus:bg-white/10 focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+                      pathname === "/contact" ? "text-white font-semibold" : "text-white/80",
+                    )}
                   >
                     Contact
                   </NavigationMenuLink>
@@ -112,32 +126,32 @@ export default function Header() {
 
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" className="bg-[#02346A] text-white">
             <div className="mb-8 mt-4">
               <Image
-                src="/images/bresan-logo-horizontal.png"
+                src="/images/bresan-logo-horizontal-new.png"
                 alt="Bresan Projects Logo"
-                width={180}
-                height={45}
-                className="h-8 w-auto"
+                width={220}
+                height={80}
+                className="h-auto w-full"
               />
             </div>
             <nav className="flex flex-col gap-4">
-              <Link href="/" className="text-lg font-medium hover:text-primary">
+              <Link href="/" className="text-lg font-medium hover:text-white/80">
                 Home
               </Link>
-              <Link href="/about" className="text-lg font-medium hover:text-primary">
+              <Link href="/about" className="text-lg font-medium hover:text-white/80">
                 About
               </Link>
-              <Link href="/services" className="text-lg font-medium hover:text-primary">
+              <Link href="/services" className="text-lg font-medium hover:text-white/80">
                 Services
               </Link>
-              <Link href="/contact" className="text-lg font-medium hover:text-primary">
+              <Link href="/contact" className="text-lg font-medium hover:text-white/80">
                 Contact
               </Link>
             </nav>

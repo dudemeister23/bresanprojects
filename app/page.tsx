@@ -30,7 +30,7 @@ export default function Home() {
               From house flips to full-home remodels, we help vision become reality—on time and on budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-700">
+              <Button asChild size="xl" variant="cta" className="text-lg px-8 py-6 h-auto">
                 <Link href="/contact">Book a Free Consultation</Link>
               </Button>
               <Button
@@ -60,7 +60,10 @@ export default function Home() {
                 techniques to deliver exceptional results for homeowners and investors alike.
               </p>
               <div className="mt-8">
-                <Link href="/about" className="inline-flex items-center text-sky-600 font-medium hover:text-sky-800">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center text-[#02346A] font-medium hover:text-[#0A4283]"
+                >
                   Learn more about our story
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -79,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-sky-50" id="services">
+      <section className="py-20 bg-[#02346A]/5" id="services">
         <div className="container px-4 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -94,10 +97,10 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {/* Service Card 1 */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-[#02346A]/10 rounded-full flex items-center justify-center mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-sky-600"
+                  className="h-6 w-6 text-[#02346A]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -118,7 +121,7 @@ export default function Home() {
               <ul className="space-y-2">
                 {["Budget management", "Contractor coordination", "Timeline tracking"].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-[#02346A] mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -127,10 +130,10 @@ export default function Home() {
 
             {/* Service Card 2 */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-[#02346A]/10 rounded-full flex items-center justify-center mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-sky-600"
+                  className="h-6 w-6 text-[#02346A]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -150,7 +153,7 @@ export default function Home() {
               <ul className="space-y-2">
                 {["ROI analysis", "Market research", "Exit strategy planning"].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-[#02346A] mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -159,10 +162,10 @@ export default function Home() {
 
             {/* Service Card 3 */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-[#02346A]/10 rounded-full flex items-center justify-center mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-sky-600"
+                  className="h-6 w-6 text-[#02346A]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -182,7 +185,7 @@ export default function Home() {
               <ul className="space-y-2">
                 {["Design guidance", "Material selection", "Value engineering"].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-[#02346A] mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -191,10 +194,10 @@ export default function Home() {
 
             {/* Service Card 4 */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-[#02346A]/10 rounded-full flex items-center justify-center mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-sky-600"
+                  className="h-6 w-6 text-[#02346A]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -214,7 +217,7 @@ export default function Home() {
               <ul className="space-y-2">
                 {["Targeted upgrades", "Staging coordination", "Market positioning"].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-[#02346A] mr-2 shrink-0" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -223,7 +226,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild>
+            <Button asChild variant="navy">
               <Link href="/services">View All Services</Link>
             </Button>
           </div>
@@ -242,23 +245,6 @@ export default function Home() {
 
           <div className="max-w-3xl mx-auto">
             <Faq />
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-sky-600">
-        <div className="container px-4 mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl max-w-2xl mx-auto">
-            Ready to Transform Your Property?
-          </h2>
-          <p className="mt-4 text-xl text-white/90 max-w-2xl mx-auto">
-            Let's discuss how Bresan Projects can help bring your vision to life with expert project management.
-          </p>
-          <div className="mt-10">
-            <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Book a Free Consultation</Link>
-            </Button>
           </div>
         </div>
       </section>

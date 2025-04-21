@@ -14,7 +14,7 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-sky-50">
+      <section className="relative py-20 bg-navy/5">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Our Services</h1>
@@ -50,7 +50,7 @@ export default function ServicesPage() {
                     "Issue resolution and troubleshooting",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-navy mr-3 shrink-0 mt-0.5" />
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
@@ -79,7 +79,7 @@ export default function ServicesPage() {
                     "Investment portfolio advisory services",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-navy mr-3 shrink-0 mt-0.5" />
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                     "Permit and regulatory compliance advice",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-navy mr-3 shrink-0 mt-0.5" />
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                     "Realtor and agent partnerships",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-sky-600 mr-3 shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-navy mr-3 shrink-0 mt-0.5" />
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
@@ -148,7 +148,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-sky-50">
+      <section className="py-20 bg-navy/5">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Process</h2>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-sky-200 hidden md:block"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-navy/20 hidden md:block"></div>
 
             <div className="space-y-12">
               {[
@@ -201,7 +201,7 @@ export default function ServicesPage() {
                 <div key={i} className="relative flex items-start md:items-center flex-col md:flex-row">
                   <div className={`md:w-1/2 ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12 md:order-2"}`}>
                     <div className="bg-white p-6 rounded-lg shadow-sm">
-                      <div className="inline-block bg-sky-100 text-sky-600 font-bold text-sm px-3 py-1 rounded-full mb-4">
+                      <div className="inline-block bg-navy/10 text-navy font-bold text-sm px-3 py-1 rounded-full mb-4">
                         {step.number}
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-sky-600 border-4 border-white hidden md:block"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-navy border-4 border-white hidden md:block"></div>
 
                   <div className={`md:w-1/2 ${i % 2 === 0 ? "md:order-2" : "md:pr-12"}`}></div>
                 </div>
@@ -266,10 +266,10 @@ export default function ServicesPage() {
             ].map((plan, i) => (
               <div
                 key={i}
-                className={`rounded-lg overflow-hidden border ${plan.featured ? "border-sky-600 shadow-lg" : "border-gray-200"}`}
+                className={`rounded-lg overflow-hidden border ${plan.featured ? "border-navy shadow-lg" : "border-gray-200"}`}
               >
                 {plan.featured && (
-                  <div className="bg-sky-600 text-white text-center py-2 text-sm font-medium">Most Popular</div>
+                  <div className="bg-navy text-white text-center py-2 text-sm font-medium">Most Popular</div>
                 )}
                 <div className="p-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.title}</h3>
@@ -277,34 +277,21 @@ export default function ServicesPage() {
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature, j) => (
                       <li key={j} className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-sky-600 mr-2 shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-navy mr-2 shrink-0" />
                         <span className="text-sm text-gray-600">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className={plan.featured ? "w-full bg-sky-600 hover:bg-sky-700" : "w-full"}>
+                  <Button
+                    asChild
+                    className={`${plan.featured ? "w-full" : "w-full"} py-2.5`}
+                    variant={plan.featured ? "cta" : "navy"}
+                  >
                     <Link href="/contact">Book a Free Consultation</Link>
                   </Button>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-sky-600">
-        <div className="container px-4 mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl max-w-2xl mx-auto">
-            Ready to Start Your Project?
-          </h2>
-          <p className="mt-4 text-xl text-white/90 max-w-2xl mx-auto">
-            Contact us today for a free consultation and let's bring your vision to life.
-          </p>
-          <div className="mt-10">
-            <Button asChild size="lg" className="bg-white text-sky-600 hover:bg-gray-100">
-              <Link href="/contact">Book a Free Consultation</Link>
-            </Button>
           </div>
         </div>
       </section>
